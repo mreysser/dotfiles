@@ -1,0 +1,19 @@
+[user]
+	name = Manfred Reysser
+	email = <user>@<domain>.<tld>
+[core]
+	editor = nano
+[diff]
+  tool = meld
+[difftool]
+  prompt = false
+[difftool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
+[merge]
+  tool = meld
+[mergetool]
+  prompt = false
+[mergetool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args --auto-merge \"$LOCAL\" \"$MERGED\" \"$REMOTE\" --output=\"$MERGED\"

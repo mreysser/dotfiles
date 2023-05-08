@@ -1,0 +1,22 @@
+[user]
+	email = <user>@<domain>.<tld>
+	name = Manfred Reysser
+[merge]
+	tool = meld
+[mergetool "meld"]
+	cmd = meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output \"$MERGED\"
+	keepBackup = false
+[difftool]
+	prompt = false
+[difftool "meld"]
+	cmd = meld \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = meld
+	guitool = meld
+[color]
+	ui = auto
+
+[mergetool]
+	keepBackup = false
+[pull]
+	ff = only
